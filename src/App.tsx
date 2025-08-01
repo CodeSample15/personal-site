@@ -3,10 +3,14 @@ import { PageRouter } from "./PageRouter"
 
 function App() {
   return (
-    <div data-bs-theme="dark">
-      <Navbar />
+    <>
+      <Navbar defaultPage="Home" tabs={[
+        {name: "Home", path: "/"},
+        {name: "Projects", path: "/projects"},
+        {name: "Drones", path: "/drones"},
+      ]}/>
       <PageRouter />
-    </div>
+    </>
   )
 }
 
