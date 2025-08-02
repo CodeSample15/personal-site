@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center min-vh-100">
+      <div className="d-flex justify-content-center align-items-center min-vh-100 user-select-none">
           <img src="sunglasses.jpg" className="rounded-circle" style={{width: '200px', height: '200px', objectFit: 'cover'}}/>
 
           <div className="d-flex flex-column p-5">

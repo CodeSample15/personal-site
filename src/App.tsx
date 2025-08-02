@@ -9,6 +9,7 @@ function App() {
         {name: "About", path: '/about'},
         {name: "Projects", path: "/projects"},
         {name: "Drones", path: "/drones"},
+        {name: "Resume", path: "/resume"}
       ]}/>
       <PageRouter />
     </>
