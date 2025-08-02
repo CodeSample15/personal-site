@@ -15,7 +15,7 @@ export const Navbar = ({defaultPage, tabs}: Props) => {
     const [page, setPage] = useState(defaultPage);
 
     return (
-        <ul className="nav nav-tabs d-flex justify-content-center">
+        <ul className="nav nav-tabs d-flex justify-content-center fixed-top">
             {tabs.map((item)=>(
                 <li className="nav-item">
                     <Link className={"nav-link " + (page===item.name ? "active" : "")} aria-current="page" to={item.path} onClick={()=>setPage(item.name)}>{item.name}</Link>

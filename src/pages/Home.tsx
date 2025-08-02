@@ -1,10 +1,14 @@
 export const Home = () => {
   return (
-    <div className="p-5 container text-center">
-      <div className="row">
-        <img src='sunglasses.jpg' style={{width: 300px, height: height: 200px}} className="img-fluid rounded-circle" alt='my face :)'/>
-        <h1>Hello! I'm Luke Crimi</h1>
+    <>
+      <div className="d-flex justify-content-center align-items-center min-vh-100">
+          <img src="sunglasses.jpg" className="rounded-circle" style={{width: '200px', height: '200px', objectFit: 'cover'}}/>
+
+          <div className="d-flex flex-column p-5">
+            <h1 className="display-1">Hello!</h1>
+            <h2>I'm <span className="fw-bold text-success-emphasis">Luke Crimi</span></h2>
+          </div>
       </div>
-    </div>
+    </>
   )
 }
