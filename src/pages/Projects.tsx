@@ -1,13 +1,29 @@
 import { useLocation } from "react-router-dom"
 import { ProjectCard } from "../components/ProjectCard"
 import Markdown from 'react-markdown'
-import type React from "react";
+import { useEffect, useState } from "react";
 
 export const Projects = () => {
+  const [markdown, setMarkdown] = useState('');
   const location = useLocation().pathname;
+  const isMainProjectPage = location.split('/').length == 2;
+
+  useEffect(()=> {
+    if(!isMainProjectPage) {
+      const localPath = `/Projects/${location.split('/')[2]}/pageContent.md`
+
+      fetch(localPath)
+        .then((res)=>res.text())
+        .then((text) => setMarkdown(text))
+        .catch((err)=>console.error("Error reading markdown: ", err));
+    }
+    else {
+      setMarkdown('');
+    }
+  });
 
   return (
-    location.split('/').length == 2 ?
+    isMainProjectPage ?
     <>
       <div className="d-flex m-5 p-1 gap-2 align-items-center flex-column">
         <h1 className="display-1">Projects</h1>
@@ -19,16 +35,9 @@ export const Projects = () => {
     </>
     :
     <>
-      {getProjectPage(location.split('/')[2])}
+      <div className="d-flex justify-content-center m-5 p-5">
+        <Markdown>{markdown}</Markdown>
+      </div>
     </>
   )
-}
-
-function getProjectPage(location:string): React.ReactElement {
-  let markdownContent = ""
-
-  if(location === 'Squiggly') {
-  }
-
-  return <div className="m-5 p-5">{markdownContent}</div>;
 }
