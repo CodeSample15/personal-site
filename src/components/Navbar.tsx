@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Link } from 'react-router-dom';
 
 export interface tabItem {
@@ -7,13 +6,12 @@ export interface tabItem {
 }
 
 interface Props {
-    defaultPage: string
+    page: string
+    setPage: (name:string)=>void;
     tabs: tabItem[];
 }
 
-export const Navbar = ({defaultPage, tabs}: Props) => {
-    const [page, setPage] = useState(defaultPage);
-
+export const Navbar = ({page, setPage, tabs}: Props) => {
     return (
         <ul className="nav nav-tabs bg-body-tertiary d-flex justify-content-left fixed-top user-select-none ">
             {tabs.map((item, index)=>(
