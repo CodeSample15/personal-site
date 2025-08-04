@@ -14,7 +14,7 @@ export const PageRouter = () => {
         <Route path='/resume' element={ <Resume/> }/>
 
         <Route path='/projects' element={ <Projects/> } />
-        <Route path='/projects/Squiggly' element={ <Projects/> } />
+        <Route path='/projects/Squiggly' element={ <Projects page="Squiggly"/> } />
         <Route path='/projects/bluetooth-led-controller' element={ <Projects/> } />
         <Route path='/projects/keras-code-generator' element={ <Projects/> } />
 

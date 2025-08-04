@@ -1,16 +1,17 @@
-import { useLocation } from "react-router-dom"
 import { ProjectCard } from "../components/ProjectCard"
 import Markdown from 'react-markdown'
 import { useEffect, useState } from "react";
 
-export const Projects = () => {
+interface Props {
+  page?: string | null;
+};
+
+export const Projects = ({page=null} : Props) => {
   const [markdown, setMarkdown] = useState('');
-  const location = useLocation().pathname;
-  const isMainProjectPage = location.split('/').length == 2;
 
   useEffect(()=> {
-    if(!isMainProjectPage) {
-      const localPath = `/Projects/${location.split('/')[2]}/pageContent.md`
+    if(page) {
+      const localPath = `/Projects/${page}/pageContent.md`
 
       fetch(localPath)
         .then((res)=>res.text())
@@ -23,7 +24,7 @@ export const Projects = () => {
   });
 
   return (
-    isMainProjectPage ?
+    !page ?
     <>
       <div className="d-flex m-5 p-1 gap-2 align-items-center flex-column">
         <h1 className="display-1">Projects</h1>
@@ -35,7 +36,7 @@ export const Projects = () => {
     </>
     :
     <>
-      <div className="d-flex justify-content-center m-5 p-5">
+      <div className="m-5 p-5">
         <Markdown>{markdown}</Markdown>
       </div>
     </>
