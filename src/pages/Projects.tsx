@@ -26,7 +26,7 @@ export const Projects = ({page=null} : Props) => {
   return (
     !page ?
     <>
-      <div className="d-flex m-5 p-1 gap-2 align-items-center flex-column">
+      <div className="d-flex m-5 pt-3 gap-2 align-items-center flex-column">
         <h1 className="display-1">Projects</h1>
         <p className="text-success-emphasis">I like to make some personal projects as a hobby using technology. Below are some of my favorites. </p>
       </div>
