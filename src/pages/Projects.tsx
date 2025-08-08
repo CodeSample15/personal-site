@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+import { Squiggly } from "./Projects/Squiggly";
 import { ProjectCard } from "../components/ProjectCard"
 
 interface Props {
@@ -6,7 +8,7 @@ interface Props {
 
 export const Projects = ({page=null} : Props) => {
   return (
-    page ?
+    !page ?
     <>
       <div className="d-flex m-5 pt-3 gap-2 align-items-center flex-column">
         <h1 className="display-1">Projects</h1>
@@ -18,7 +20,15 @@ export const Projects = ({page=null} : Props) => {
     </>
     :
     <>
-      
+      <div className="m-5 p-3">
+        {getProjectPage(page)}
+      </div>
     </>
   )
+}
+
+function getProjectPage(page: string) : ReactNode {
+  if(page === 'Squiggly')
+    return <Squiggly/>
+  return <></>;
 }
