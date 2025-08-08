@@ -13,7 +13,7 @@ export const ProjectCard = ({BannerSrc, Name, Brief, ProjectPageUrl=null, Github
             <img src={BannerSrc} className="card-img-top p-1" alt={Name+" banner"} style={{width: '100%', height: '10vw', objectFit: 'cover'}}/>
             <div className="card-body">
                 <h5 className="card-title">{Name}</h5>
-                <p className="card-text">{Brief}</p>
+                <p className="card-text"><pre>{Brief}</pre></p>
                 <div className="d-flex justify-content-left gap-2">
                     { ProjectPageUrl &&
                     <a href={ProjectPageUrl} className="btn btn-success">More</a>
