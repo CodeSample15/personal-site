@@ -6,6 +6,8 @@ import { Drones } from './pages/Drones'
 import { NotFound } from './pages/NotFound';
 import { Resume } from './pages/Resume';
 
+import { Squiggly } from './pages/Projects/Squiggly';
+
 export const PageRouter = () => {
   return (
     <Routes>
@@ -14,7 +16,7 @@ export const PageRouter = () => {
         <Route path='/resume' element={ <Resume/> }/>
 
         <Route path='/projects' element={ <Projects/> } />
-        <Route path='/projects/Squiggly' element={ <Projects page="Squiggly"/> } />
+        <Route path='/projects/Squiggly' element={ <Squiggly/> } />
         <Route path='/projects/bluetooth-led-controller' element={ <Projects/> } />
         <Route path='/projects/keras-code-generator' element={ <Projects/> } />
 
