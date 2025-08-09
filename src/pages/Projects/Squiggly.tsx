@@ -15,7 +15,7 @@ export const Squiggly = () => {
         <>
             <h1 id="squiggly">Squiggly</h1>
             <blockquote>
-                <small><span className="fw-bold text-success-emphasis">An esoteric scripting language for game dev</span></small>
+                <small><span className="fw-bold text-success-emphasis">An esoteric scripting language for game development</span></small>
             </blockquote>
             <hr/>
             <p>The idea for Squiggly was born from my friend saying he wanted to make a mini game console with Arduino, similar to a Game Boy.</p>

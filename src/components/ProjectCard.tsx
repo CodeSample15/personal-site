@@ -4,9 +4,10 @@ interface Props {
     Brief: string;
     ProjectPageUrl?: string | null;
     GithubUrl?: string | null;
+    NewPage?: boolean;
 }
 
-export const ProjectCard = ({BannerSrc, Name, Brief, ProjectPageUrl=null, GithubUrl=null} : Props) => {
+export const ProjectCard = ({BannerSrc, Name, Brief, ProjectPageUrl=null, GithubUrl=null, NewPage=false} : Props) => {
   return (
     <>
         <div className="card m-3" style={{width: "10rem;"}}>
@@ -16,7 +17,12 @@ export const ProjectCard = ({BannerSrc, Name, Brief, ProjectPageUrl=null, Github
                 <p className="card-text"><pre>{Brief}</pre></p>
                 <div className="d-flex justify-content-left gap-2">
                     { ProjectPageUrl &&
-                    <a href={ProjectPageUrl} className="btn btn-success">More</a>
+                        (
+                            NewPage?
+                            <a href={ProjectPageUrl} className="btn btn-success" target="_blank">More</a>
+                            :
+                            <a href={ProjectPageUrl} className="btn btn-success">More</a>
+                        )
                     }
 
                     { GithubUrl && 
