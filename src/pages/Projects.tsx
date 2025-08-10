@@ -34,22 +34,32 @@ with Unity to generate Keras code"
                     Name="Bluetooth Led Controller" 
                     Brief="Controlling my LED lights with Bluetooth
 using the Arduino Nano 33 IoT" 
-                    ProjectPageUrl="/projects/Squiggly" 
                     GithubUrl="https://github.com/CodeSample15/Bluetooth-LED-Controller"/>
 
         <ProjectCard BannerSrc="Projects/Vex-Differential-Swerve/banner.jpg" 
                     Name="Vex Differential Swerve Drive Code" 
                     Brief="Small coding adventure where I programmed
 a VexIQ differential swerve drive from scratch" 
-                    ProjectPageUrl="/projects/Squiggly" 
                     GithubUrl="https://github.com/CodeSample15/VexDifferentialSwerve"/>
 
         <ProjectCard BannerSrc="Projects/Accelerate/banner.png" 
                     Name="Accelerate" 
                     Brief="A 2D survival game published for Windows" 
                     ProjectPageUrl="https://ricochetgames.itch.io/accelerate" 
-                    GithubUrl="https://github.com/CodeSample15/Accelerate-Game/tree/master"
+                    GithubUrl="https://github.com/CodeSample15/Accelerate-Game"
                     NewPage={true}/>
+
+        <ProjectCard BannerSrc="Projects/Magic-Wand-Lights/banner.png" 
+                    Name="LED Magic Lights" 
+                    Brief="Using computer vision to control the lights in
+my room" 
+                    GithubUrl="https://github.com/CodeSample15/Harry-Potter-LEDs"/>
+
+        <ProjectCard BannerSrc="Projects/Face-Computer-Interaction/banner.png" 
+                    Name='"Eye" tracker' 
+                    Brief="Using AI (Mediapipe) to track faces and 
+display where on a screen someone is looking." 
+                    GithubUrl="https://github.com/CodeSample15/EyeTracker"/>
       </div>
     </>
     :
