@@ -27,7 +27,6 @@ export const Projects = ({page=null} : Props) => {
                     Name="Keras Code Generator" 
                     Brief="A GUI application made 
 with Unity to generate Keras code" 
-                    ProjectPageUrl="/projects/Keras-Code-Generator" 
                     GithubUrl="https://github.com/CodeSample15/KerasCodeGenerator"/>
 
         <ProjectCard BannerSrc="Projects/Bluetooth-Led-Controller/banner.jpg" 
