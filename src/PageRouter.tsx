@@ -17,8 +17,7 @@ export const PageRouter = () => {
 
           <Route path='/projects' element={ <Projects/> } />
           <Route path='/projects/Squiggly' element={ <Projects page={'Squiggly'}/> } />
-          <Route path='/projects/bluetooth-led-controller' element={ <Projects/> } />
-          <Route path='/projects/keras-code-generator' element={ <Projects page={'Keras-Code-Generator'}/> } />
+          <Route path='/projects/TENTF-devlog' element={ <Projects page={'TENTF'}/> } />
           
           <Route path='/drones' element={ <Drones/> } />
           <Route path='*' element={ <NotFound/> } />

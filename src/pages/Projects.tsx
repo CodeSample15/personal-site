@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { ProjectCard } from "../components/ProjectCard"
 
 import { Squiggly } from "./Projects/Squiggly";
-import { KerasCodeGenerator } from "./Projects/KerasCodeGenerator";
+import { TENTF } from "./Projects/TENTF";
 
 interface Props {
   page?: string | null;
@@ -59,6 +59,13 @@ my room"
                     Brief="Using AI (Mediapipe) to track faces and 
 display where on a screen someone is looking." 
                     GithubUrl="https://github.com/CodeSample15/EyeTracker"/>
+
+        <ProjectCard BannerSrc="Projects/TENTF-Game/banner.png" 
+                    Name='Multiplayer Horror Game' 
+                    Brief="Created a devlog server for a multiplayer
+horror game my friend and I
+are making with Unity."
+                    ProjectPageUrl="/projects/TENTF-devlog?devlog=latest"/>
       </div>
     </>
     :
@@ -73,7 +80,8 @@ display where on a screen someone is looking."
 function getProjectPage(page: string) : ReactNode {
   if(page === 'Squiggly')
     return <Squiggly/>
-  if(page === 'Keras-Code-Generator')
-    return <KerasCodeGenerator/>
+  else if(page === 'TENTF')
+    return <TENTF/>
+  
   return <></>;
 }

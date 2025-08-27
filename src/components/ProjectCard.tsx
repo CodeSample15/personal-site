@@ -10,11 +10,11 @@ interface Props {
 export const ProjectCard = ({BannerSrc, Name, Brief, ProjectPageUrl=null, GithubUrl=null, NewPage=false} : Props) => {
   return (
     <>
-        <div className="card m-3" style={{width: "10rem;"}}>
+        <div className="card m-3" style={{width: "25rem"}}>
             <img src={BannerSrc} className="card-img-top p-1" alt={Name+" banner"} style={{width: '100%', height: '10vw', objectFit: 'cover'}}/>
             <div className="card-body">
                 <h5 className="card-title">{Name}</h5>
-                <p className="card-text"><pre>{Brief}</pre></p>
+                <pre className="card-text"><p>{Brief}</p></pre>
                 <div className="d-flex justify-content-left gap-2">
                     { ProjectPageUrl &&
                         (
