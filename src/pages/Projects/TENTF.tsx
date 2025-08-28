@@ -117,7 +117,6 @@ export const TENTF = () => {
 
 function getButtons(currentButton: number, highestButton: number, updatePage:(devlog:number)=>void) {
   let numbers = [currentButton];
-  let remaining = MAX_BUTTONS/2;
   
   //don't judge this algo too much, I did a quick and dirty cuz I really just want to get started on making the game itself
   let leftNumberShift = 1;
