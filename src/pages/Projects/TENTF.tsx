@@ -4,7 +4,7 @@ import { useSearchParams } from "react-router-dom";
 import Markdown from "react-markdown";
 
 const DEVLOG_API = 'https://devlogs.lukecrimi.com/TENTF';
-const MAX_BUTTONS = 5;
+const MAX_BUTTONS = 6;
 const getImages = cache(fetch_devlog); //set up caching for devlogs (don't keep making requests to devlog server)
 
 export const TENTF = () => {
@@ -80,7 +80,7 @@ export const TENTF = () => {
           </>
           :
           <>
-            <div className="d-flex justify-content-center pt-2">
+            <div className="d-flex flex-column justify-content-center pt-2">
               <Markdown>{text}</Markdown>
             </div>
 
