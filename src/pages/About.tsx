@@ -13,7 +13,8 @@ export const About = () => {
         I'm hoping to obtain a career involving <p className="text-warning-emphasis">embedded systems, automation scripting, robotics, and/or low level programming in general.</p> <br />
 
         <h3>Hobbies</h3>
-        <ButtonSelectionGroup></ButtonSelectionGroup>
+        <ButtonSelectionGroup list_titles={['']} 
+                              list_content={['']}/>
         I'm also a drone pilot, a runner, a guitar player, a skier, and a hobbyist game developer.
         
 

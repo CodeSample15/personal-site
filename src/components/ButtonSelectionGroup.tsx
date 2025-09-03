@@ -18,10 +18,11 @@ export const ButtonSelectionGroup = ({ list_titles, list_content }: Props) => {
         </div>
         <div className="col-8">
             <div className="tab-content" id="nav-tabContent">
-                <div className="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">One</div>
-                <div className="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Two</div>
-                <div className="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Three</div>
-                <div className="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Four</div>
+                {
+                    list_content.map((item, index)=>(
+                        <div className={"tab-pane fade " + (index==0?"show active":"")} id={`list-${list_titles[index]}`} role="tabpanel" aria-labelledby={`list-${list_titles[index]}-list`} key={index}>{item}</div>
+                    ))
+                }
             </div>
         </div>
         </div>
