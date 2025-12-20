@@ -33,7 +33,7 @@ export const Home = () => {
                 </svg>
               </button>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="https://www.instagram.com/lcdrone15/" target="_blank">Main</a></li>
+                <li><a className="dropdown-item" href="https://www.instagram.com/luke_crimi/" target="_blank">Main</a></li>
                 <li><a className="dropdown-item" href="https://www.instagram.com/flopperfpv/" target="_blank">FPV</a></li>
               </ul>
             </div>
