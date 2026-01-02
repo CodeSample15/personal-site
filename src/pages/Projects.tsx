@@ -3,6 +3,7 @@ import { ProjectCard } from "../components/ProjectCard"
 
 import { Squiggly } from "./Projects/Squiggly";
 import { TENTF } from "./Projects/TENTF";
+import { YASBot } from "./Projects/YASBot";
 
 interface Props {
   page?: string | null;
@@ -66,6 +67,12 @@ display where on a screen someone is looking."
 horror game my friend and I
 are making with Unity."
                     ProjectPageUrl="/projects/TENTF-devlog?devlog=latest"/>
+
+        <ProjectCard BannerSrc="Projects/YASBot/banner.jpg" 
+                    Name='Yet-Another-Spider Bot (YASBot)' 
+                    Brief="Devlog for my servo spider robot project."
+                    ProjectPageUrl="/projects/YASBot-devlog?devlog=latest"
+                    GithubUrl="https://github.com/CodeSample15/ESP32-Spider-Robot-V1"/>
       </div>
     </>
     :
@@ -82,6 +89,8 @@ function getProjectPage(page: string) : ReactNode {
     return <Squiggly/>
   else if(page === 'TENTF')
     return <TENTF/>
+  else if(page === 'YASBot')
+    return <YASBot/>
   
   return <></>;
 }
