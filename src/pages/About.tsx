@@ -2,7 +2,7 @@ import { ButtonSelectionGroup } from "../components/ButtonSelectionGroup"
 
 export const About = () => {
   return (
-    <div className="p-5">
+    <div className="p-3">
       <h1>About Me</h1>
       <hr />
       <p>

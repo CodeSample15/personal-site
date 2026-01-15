@@ -18,6 +18,7 @@ export const PageRouter = () => {
           <Route path='/projects' element={ <Projects/> } />
           <Route path='/projects/Squiggly' element={ <Projects page={'Squiggly'}/> } />
           <Route path='/projects/TENTF-devlog' element={ <Projects page={'TENTF'}/> } />
+          <Route path='/projects/YASBot-devlog' element={ <Projects page={'YASBot'}/> } />
           
           <Route path='/drones' element={ <Drones/> } />
           <Route path='*' element={ <NotFound/> } />

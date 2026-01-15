@@ -3,6 +3,7 @@ import { ProjectCard } from "../components/ProjectCard"
 
 import { Squiggly } from "./Projects/Squiggly";
 import { TENTF } from "./Projects/TENTF";
+import { YASBot } from "./Projects/YASBot";
 
 interface Props {
   page?: string | null;
@@ -12,7 +13,7 @@ export const Projects = ({page=null} : Props) => {
   return (
     !page ?
     <>
-      <div className="d-flex m-5 pt-3 gap-2 align-items-center flex-column">
+      <div className="d-flex m-5 gap-2 align-items-center flex-column">
         <h1 className="display-1">Projects</h1>
         <p className="text-success-emphasis">I like to make some personal projects as a hobby using technology. Below are some of my favorites. </p>
       </div>
@@ -23,11 +24,23 @@ export const Projects = ({page=null} : Props) => {
                     ProjectPageUrl="/projects/Squiggly" 
                     GithubUrl="https://github.com/CodeSample15/Squiggly"/>
 
+        <ProjectCard BannerSrc="Projects/YASBot/banner.jpg" 
+                    Name='Yet-Another-Spider Bot (YASBot)' 
+                    Brief="Devlog for my servo spider robot project."
+                    ProjectPageUrl="/projects/YASBot-devlog?devlog=latest"
+                    GithubUrl="https://github.com/CodeSample15/ESP32-Spider-Robot-V1"/>
+
         <ProjectCard BannerSrc="Projects/Keras-Code-Generator/banner.png" 
                     Name="Keras Code Generator" 
                     Brief="A GUI application made 
 with Unity to generate Keras code" 
                     GithubUrl="https://github.com/CodeSample15/KerasCodeGenerator"/>
+
+        <ProjectCard BannerSrc="Projects/Desktop-Info-Display/banner.jpg" 
+                    Name="Desktop Info Mini Display" 
+                    Brief="Using Python+Arduino to make a mini info 
+display for Windows computers" 
+                    GithubUrl="https://github.com/CodeSample15/Arduino-Desktop-Display"/>
 
         <ProjectCard BannerSrc="Projects/Bluetooth-Led-Controller/banner.jpg" 
                     Name="Bluetooth Led Controller" 
@@ -82,6 +95,8 @@ function getProjectPage(page: string) : ReactNode {
     return <Squiggly/>
   else if(page === 'TENTF')
     return <TENTF/>
+  else if(page === 'YASBot')
+    return <YASBot/>
   
   return <></>;
 }
