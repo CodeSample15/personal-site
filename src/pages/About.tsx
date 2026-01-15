@@ -10,7 +10,7 @@ export const About = () => {
         My name is <strong className="text-success-emphasis">Luke Crimi</strong>. <br /> <br />
         
         🎓 I'm currently pursuing my bachelor's degree in Computer Science and Engineering at <strong>Lehigh University</strong>.<br />
-        💻 I'm hoping to obtain a career involving <span className="text-warning-emphasis">embedded systems, automation scripting, robotics, and/or low level programming in general.</span> <br /> <br />
+        💻 I'm hoping to enter a career involving <span className="text-warning-emphasis">embedded systems, automation scripting, robotics, and/or low level programming in general.</span> <br /> <br />
 
 
       </p>
@@ -34,13 +34,17 @@ export const About = () => {
       <p>
         This website was made with React, Typescript, Vite, and Bootstrap.
 
-        So if you couldn't tell already, I'm not great at frontend design. My goal with this website was <strong>not</strong> to show off my webdev skills. <br /> <br />
+        Something immediately obvious: I'm not great at frontend design. My goal with this website was not to show off my webdev skills. <br /> <br />
 
-        You may be asking <strong className="text-danger-emphasis">"why not just use a website generator in that case?"</strong> <br /> <br />
+        You may be asking <strong className="text-danger-emphasis">"why not just use a website generator or LLM in that case?"</strong> <br /> <br />
 
         That's a great question. Honestly, I think I just liked the idea of a casual challenge for myself. I've been learning how to use React and Typescript for a different project and figured I'd use
         my new knowledge on something for myself. Plus, I prefer not to use LLMs or generators when I'm trying to learn a new skill. I'll use LLMs to help explain concepts, but when writing code, I learn
-        best when I'm forced to type and really think about what goes into my codebase. 
+        best when I'm forced to type and really think about what goes into my codebase. <br /> <br />
+
+        The main purpose of this website is for me to have someplace where I can put my up-to-date resume, post updates for projects I'm working on, and do basically whatever I want with. <br /><br />
+
+        Check out the projects tab of this site, I promise it has more interesting undertakings than the website itself.
       </p>
     </div>
   )
