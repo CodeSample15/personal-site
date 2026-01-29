@@ -10,7 +10,7 @@ export const About = () => {
         My name is <strong className="text-success-emphasis">Luke Crimi</strong>. <br /> <br />
         
         🎓 I'm currently pursuing my bachelor's degree in Computer Science and Engineering at <strong>Lehigh University</strong>.<br />
-        💻 I'm hoping to enter a career involving <span className="text-warning-emphasis">embedded systems, automation scripting, robotics, and/or low level programming in general.</span> <br /> <br />
+        💻 I'm hoping to enter a career involving <span className="text-warning-emphasis">embedded systems, automation scripting, robotics, and/or low(er) level programming in general.</span> <br /> <br />
 
 
       </p>
