@@ -16,9 +16,7 @@ function App() {
     <>
       <Navbar page={currPage} setPage={setCurrPage} tabs={[
         {name: "Home", path: "/"},
-        {name: "About", path: '/about'},
         {name: "Projects", path: "/projects"},
-        {name: "Drones", path: "/drones"},
         {name: "Resume", path: "/resume"}
       ]}/>
       <PageRouter />
